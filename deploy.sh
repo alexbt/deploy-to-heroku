@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git filter-branch -- --all
+rm -rf .git
 
 export GIT_SHORT_HASH=`git rev-parse --short HEAD`
 
