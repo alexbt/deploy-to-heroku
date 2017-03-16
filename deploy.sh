@@ -3,9 +3,6 @@
 cd $1
 export GIT_SHORT_HASH=`git rev-parse --short HEAD`
 
-rm -rf .git
-git init
-
 curl -n -X PATCH https://api.heroku.com/apps/${HEROKU_APPNAME}/config-vars \
   -d '{
   "GIT_SHORT_HASH": "'"${GIT_SHORT_HASH}"'",
