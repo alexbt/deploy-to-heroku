@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd $1
 export GIT_SHORT_HASH=`git rev-parse --short HEAD`
 
 rm -rf .git
