@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd $1
-echo pwd
+pwd
 export GIT_SHORT_HASH=`git rev-parse --short HEAD`
 
 curl -n -X PATCH https://api.heroku.com/apps/${HEROKU_APPNAME}/config-vars \
